@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tata">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="portfolio html css">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    
+    <link href="https://fonts.cdnfonts.com/css/arista-signature" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <!---- MENU ---->
+        <div>
+            <div id="menuToggle">
+                <input type="checkbox" onclick="togNav()">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+            <div>
+                <nav class="nav-menu" id="menu">
+                    <ul>
+                        <li><a href="#" onclick="openSection()">ABOUT</a></li>
+                        <li><a href="#" onclick="openSection1()">PROJECTS</a></li>
+                        <li><a href="https://www.t.me/ta_kotoraya_ta" target="_blank">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!---- PROF-BOX ---->
+        <div class="prof-box">
+            <div>
+                <img class="prof-pic" src="https://i.postimg.cc/SKFNz3Xm/photo-2021-01-18-08-08-47.jpg" alt=""/>
+                <h1 id="h">Tata Rusetskaya</h1>
+                <p class="dev"> Front-end Developer </p>
+                <p class="info">
+                    I'm a 23 years old frontend developer, passionate about creating and developing web interfaces, based in Kiev, Ukraine. 
+                    I had some commercial experience in this field, but, unfortunately, not much. I have some projects, which were written in HTML, CSS, JavaScript and React. 
+                    You can see them on this page.
+                </p>
+                <a href="#" onclick="openSection()" class="btn-1">More About Me</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100014756447608" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ta_kotoraya_ta/?hl=en" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.linkedin.com/in/tata-rusetskaya-5bb2b41b6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.t.me/ta_kotoraya_ta" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+        </div>
+        <!---- ABOUT ---->
+        <div class="about" id="meabout">
+            <div class="about-content">
+                <div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSection()">&times;</a>
+                    <h1 id="h1">About me</h1>
+                    <p class="p1">
+                        I'm a 23 years old frontend developer, passionate about creating and developing web interfaces, based in Kiev, Ukraine.
+                        I had some commercial experience in this field, but, unfortunately, not much. I have some projects, which were written in HTML, CSS, JavaScript and React.
+                        You can see them <a href="#projects" class="here">here</a>.
+                    </p>
+                    <p class="p2">
+                        Also I`m a project film art photographer, you can see some of my films on <a href="https://www.instagram.com/ta_kotoraya_ta/?hl=en" class="instagram" target="_blank">instagram</a> or
+                        <a href="#" class="here"> here</a>.<br>I like art in all it`s conditions, but most of all I`m inspired by <a href="https://www.t.me/P_Eluard" class="collages" target="_blank">cinematography</a> and
+                        <a href="https://www.facebook.com/media/set/?vanity=100014756447608&set=a.969364840232055&__cft__[0]=AZXCn4GD8JRwf4K1JThoPjCv5LIiFxYc6BUm_t2gUFdhVxc9YtluOJ5_5wEYky16sGTosfg1vEJFjoe_wo725Y7d2qMCNTX8OduMnMnrEYlbTQ&__tn__=-UC%2CP-R" class="collages" target="_blank"> collaging </a>
+                        makes me feel the most peacefull.
+                    </p>
+                    <a class="btn-2" href="../cv/cv.docx" download="cv">Download CV</a>
+                </div>
+                <div class="skills">
+                    <h1 id="h2">SKILLS</h1>
+                    <label class="html">HTML</label>
+                    <input type="range" min="1" max="100" value="90" class="slider" id="slider1">
+                    <label class="css">CSS</label>
+                    <input type="range" min="1" max="100" value="90" class="slider" id="slider2">
+                    <label class="js">JavaScript</label>
+                    <input type="range" min="1" max="100" value="70" class="slider" id="slider3">
+                    <label class="git">Git</label>
+                    <input type="range" min="1" max="100" value="90" class="slider" id="slider4">
+                    <label class="unix">UNIX</label>
+                    <input type="range" min="1" max="100" value="40" class="slider" id="slider5">
+                    <label class="oop">OOP</label>
+                    <input type="range" min="1" max="100" value="40" class="slider" id="slider6">
+                    <label class="react">React</label>
+                    <input type="range" min="1" max="100" value="40" class="slider" id="slider7">
+                    <label class="ui">UI/UX</label>
+                    <input type="range" min="1" max="100" value="70" class="slider" id="slider8">
+                    <label class="filmphoto">Film photography</label>
+                    <input type="range" min="1" max="100" value="90" class="slider" id="slider9">
+                    <label class="collaging">Collaging</label>
+                    <input type="range" min="1" max="100" value="90" class="slider" id="slider10">
+                </div>
+            </div>
+        </div>
+        <!---- PROJECTS ---->
+        <div class="projects" id="projects1">
+            <div class="projects-content">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSection1()">&times;</a>
+                <div class="project">
+                    <a href="https://takotorayata.github.io" alt="art-shop" target="_blank">
+                        <img class="img1" src="https://i.postimg.cc/zBPkcSwW/2021-07-14-6.png" alt=""></img>
+                    </a>
+                    <h1 class="name">Art-shop of Vladimir Lemzyakov</h1>
+                    <p class="text">(HTML, CSS, JS), 2021</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10092;</a>
+                <a class="next" onclick="plusSlides(1)">&#10093;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

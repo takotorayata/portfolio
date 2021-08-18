@@ -1,0 +1,1622 @@
+a {
+    text-decoration: none;
+}
+body {
+    background-image: url(https://i.postimg.cc/Qd2BLBKL/trees-1025783_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* MENU */
+#menu {
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+}
+#menuToggle {
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px rgba(14, 13, 13, 0.8);
+    background: rgba(14, 13, 13, 0.6);
+}
+#menuToggle input {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+#menuToggle span{
+    width: 19px;
+    height: 1px;
+    margin: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+#span1 {
+    transform-origin: 4px 0px;
+}
+#span3 {
+    transform-origin: bottom right;
+}
+#menuToggle input:checked ~ #span1 {
+    background-color: rgb(109, 0, 0);
+    transform: rotate(45deg) translate(3px);
+}
+#menuToggle input:checked ~ #span2 {
+    background-color: rgb(109, 0, 0);
+    transform: rotate(495deg) translate(1px);   
+}
+#menuToggle input:checked ~ #span3 {
+    background-color: rgb(109, 0, 0);
+    transform: rotate(45deg);
+    opacity: 0;
+}
+#menuToggle input:hover ~ span {
+    background-color: rgb(109, 0, 0);
+}
+nav {
+    width: 0;
+    height: 35px;
+    position: absolute;
+    right: 49px;
+    top: 10px;
+    background: rgba(14, 13, 13, 0.6);
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 2px rgba(14, 13, 13, 0.8);
+}
+.nav-menu {
+    width: 0;
+    float: right;
+}
+.nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(109, 0, 0);
+    font-family: 'Poiret One', cursive;
+    line-height: 35px;
+    margin: 3px;
+}
+.nav-menu ul li a:hover {
+    color: rgb(255, 3, 3, 0.9);
+    /* must be done - вычеркивание */
+}
+
+/* PROF-BOX */
+.prof-box {
+    width: 500px;
+    height: 550px;
+    background: rgba(14, 13, 13, 0.7);
+    padding: 40px;
+    top: 170px;
+    left: 670px;
+    position: absolute;
+    text-align: center;
+}
+.prof-box:hover ~ .btn-1,
+.prof-box:hover ~ #h {
+    color: rgb(250, 3, 3);
+}
+.prof-pic {
+    position: absolute;
+    top: 30px;
+    left: 210px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0;
+}
+#h {
+    position: absolute;
+    top: 170px;
+    left: 190px;
+    font-weight: 100;
+    font-size: 60px;
+    font-family: 'Arista Signature';
+    color: rgb(109, 0, 0);
+}
+.dev {
+    color: black;
+    position: absolute;
+    top: 280px;
+    left: 185px;
+    font-weight: 100;
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+}
+.info {
+    position: absolute;
+    top: 360px;
+    left: 40px;
+    width: 500px;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Poiret One', cursive;
+    color: rgba(255, 255, 255, 0.3);
+    border-width: 1px;
+    text-align: center;
+}
+.btn-1 {
+    position: absolute;
+    top: 490px;
+    left: 190px;
+    color: rgb(109, 0, 0);
+    font-weight: 100;
+    font-family: 'Arista Signature';
+    font-size: 50px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid rgb(14, 13, 13);
+    box-shadow: 0 0 5px  rgb(14, 13, 13, 0.7);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+#h:hover {
+    color: rgb(250, 3, 3, 0.9);
+}
+.btn-1:hover {
+    color: rgb(250, 3, 3, 0.9);
+}
+.social-icons {
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    top: 580px;
+    left: 225px;
+    font-size: 30px;
+    justify-content: space-between;
+}
+.social-icons a {
+    margin: 0 8px 0 0;
+    color: black;
+}
+.social-icons a:hover {
+    color: rgb(250, 3, 3, 0.9);
+}
+
+/* ABOUTME-CONTENT */
+/* ABOUT ME */
+.about {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(14,13,13);
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+.about-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about .closebtn {
+    position: absolute;
+    top: 1px;
+    right: 6px;
+    font-size: 35px;
+    color: rgb(109, 0, 0);
+}
+#h1 {
+    font-weight: 100;
+    font-size: 60px;
+    font-family: 'Arista Signature';
+    color: rgb(109, 0, 0);
+    left: 60px;
+    top: 100px;
+    position: absolute;
+}
+.p1 {
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+    font-weight: 100;
+    font-family: 'Poiret One', cursive;
+    color: rgb(255, 255, 255, 0.6);
+    text-align: left;
+    width: 800px;
+}
+.p2 {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+    font-weight: 100;
+    font-family: 'Poiret One', cursive;
+    color: rgb(109, 0, 0);
+    text-align: left;
+    width: 800px;
+}
+.instagram, .here {
+    border-bottom: 0.1px solid rgb(109, 0, 0);
+    color: rgb(109, 0, 0);
+}
+.instagram:hover, .here:hover, .collages:hover {
+    color: rgb(250, 3, 3, 0.6);
+    border-bottom: 0.1px solid rgb(250, 3, 3, 0.6);
+}
+.collages {
+    color: rgb(109, 0, 0);
+    border-bottom: 0.1px solid rgb(109, 0, 0);
+}
+.btn-2 {
+    position: absolute;
+    top: 380px;
+    left: 670px;
+    color: rgb(109, 0, 0);
+    font-weight: 100;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+/* SKILLS */
+#h2 {
+    position: absolute;
+    right: 130px;
+    top: 690px;
+    font-weight: 100;
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+    color: rgb(109, 0, 0);
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 0.2px;
+    background: rgb(255, 255, 255, 0.6);
+    outline: none;
+    position: absolute;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgb(109, 0, 0);
+    cursor: pointer;
+}
+.html, .css, .js, .unix, .git, .oop,
+.filmphoto, .collaging, .ui, .react {
+    position: absolute;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'Poiret One';
+    color: rgb(255, 255, 255, 0.6);
+}
+.html {
+    right: 210px;
+    top: 760px;
+}
+.css {
+    right: 210px;
+    top: 780px;
+}
+.js {
+    right: 210px;
+    top: 800px;
+}
+.git {
+    right: 210px;
+    top: 820px;
+}
+.ui {
+    right: 210px;
+    top: 840px;
+}
+.oop {
+    right: 210px;
+    top: 860px;
+}
+.unix {
+    right: 210px;
+    top: 880px;
+}
+.react {
+    right: 210px;
+    top: 900px;
+}
+.filmphoto {
+    right: 210px;
+    top: 920px;
+}
+.collaging {
+    right: 210px;
+    top: 940px;
+}
+#slider1 {
+    right: 20px;
+    top: 770px;
+}
+#slider2 {
+    right: 20px;
+    top: 790px;
+}
+#slider3 {
+    right: 20px;
+    top: 810px;
+}
+#slider4 {
+    right: 20px;
+    top: 830px;
+}
+#slider5 {
+    right: 20px;
+    top: 850px;
+}
+#slider6 {
+    right: 20px;
+    top: 870px;
+}
+#slider7 {
+    right: 20px;
+    top: 890px;
+}
+#slider8 {
+    right: 20px;
+    top: 910px;
+}
+#slider9 {
+    right: 20px;
+    top: 930px;
+}
+#slider10 {
+    right: 20px;
+    top: 950px;
+}
+
+/* PROJECTS */
+.projects {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(14,13,13);
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+.projects-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.projects .closebtn {
+    position: absolute;
+    top: 1px;
+    right: 6px;
+    font-size: 35px;
+    color: rgb(109, 0, 0);
+}
+.img1 {
+    top: 290px;
+    left: 610px;
+    position: relative;
+    width: 700px;
+    height: 400px;
+}
+.project a:hover .img1 {
+    opacity: 0.7;
+}
+.name {
+    font-weight: 100;
+    font-size: 60px;
+    font-family: 'Arista Signature';
+    color: rgb(109, 0, 0);
+    left: 607px;
+    top: 670px ;
+    position: absolute;
+}
+.name:hover {
+    color: rgb(255, 3, 3, 0.9);
+}
+.text {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Poiret one', cursive;
+    color: rgb(255, 255, 255, 0.6);
+    left: 1120px;
+    top: 780px;
+    position: absolute;
+}
+
+/* SLIDER */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 470px;
+    width: 100%;
+    color: rgb(109, 0, 0);
+    font-size: 50px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.prev {
+    left: 570px;
+  }
+.next {
+    left: 1330px;
+}
+.prev:hover, .next:hover {
+    color: rgb(250, 3, 3, 0.9);
+}
+
+/* MEDIA SCREEN */
+/* !!!!must change: all m queries */
+
+/* for mobiles (only iphone 6,7,8) */
+@media only screen and (max-width: 480px) {
+    /* menu */
+    .nav-menu {
+        height: 30px;
+        width: 160px;
+    }
+    #menu {
+        height: 30px;
+        max-width: 160px;
+    }
+    .nav-menu ul li a {
+        font-size: 10px; 
+    }
+    #menuToggle {
+        width: 30px;
+        height: 30px;
+        right: 5px;
+    }
+    /* prof-box */
+    .prof-box {
+        max-width: 480px;
+        background-size: cover; 
+        width: 300px;
+        height: 430px;
+        padding: 0;
+        top: 120px;
+        left: 40px;
+    }
+    .prof-pic {
+        width: 80px;
+        height: 80px;
+        left: 120px;
+        top: 20px;
+    }
+    #h {
+        top: 80px;
+        left: 90px;
+        font-size: 45px;
+    }
+    .dev {
+        top: 160px;
+        left: 90px;
+        font-size: 15px;
+    }
+    .info {
+        top: 200px;
+        left: 10px;
+        width: 280px;
+        font-size: 14px;
+    }
+    .btn-1 {
+        top: 340px;
+        left: 60px;
+        font-size: 40px;
+        width: 180px;
+        height: 50px;
+    }
+    .social-icons {
+        top: 400px;
+        left: 100px;
+        font-size: 20px;
+    }
+    .social-icons a {
+        margin: 0 8px 0 0;
+    }
+    /* about me */
+    #meabout {
+        max-width: 480px;
+        height: 100%;
+    }
+    .about-content .closebtn {
+        top: 1px;
+        right: 6px;
+        font-size: 30px;
+        text-decoration: none;
+        position: absolute;
+    }
+    #h1 {
+        font-size: 50px;
+        left: 17px;
+        top: 10px;
+    }
+   .p1 {
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.2s;
+        font-weight: 100;
+        text-align: left;
+        width: 330px;
+    }
+  .p2 {
+        position: absolute;
+        top: 210px;
+        left: 10px;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.2s;
+        font-weight: 100;
+        text-align: left;
+        width: 330px;
+    }
+    .btn-2 {
+        position: absolute;
+        top: 320px;
+        left: 240px;
+        font-weight: 100;
+        font-size: 15px;
+        width: 110px;
+        height: 20px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid rgb(255, 255, 255, 0.6);
+        transition: all 0.3s ease;
+    }
+    #h2 {
+        position: absolute;
+        right: 100px;
+        top: 400px;
+        font-weight: 100;
+        font-size: 25px;
+    }
+    .slider {
+        -webkit-appearance: none;
+        width: 90px;
+        height: 0.2px;
+        outline: none;
+        position: absolute;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .html, .css, .js, .unix, .git, .oop, 
+    .filmphoto, .collaging, .ui, .react {
+        position: absolute;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    .html {
+        right: 160px;
+        top: 450px;
+    }
+    .css {
+        right: 160px;
+        top: 470px;
+    }
+    .js {
+        right: 160px;
+        top: 490px;
+    }
+    .git {
+        right: 160px;
+        top: 510px;
+    }
+    .ui {
+        right: 160px;
+        top: 530px;
+    }
+    .oop {
+        right: 160px;
+        top: 550px;
+    }
+    .unix {
+        right: 160px;
+        top: 570px;
+    }
+    .react {
+        right: 160px;
+        top: 590px;
+    }
+    .filmphoto {
+        right: 160px;
+        top: 610px;
+    }
+    .collaging {
+        right: 160px;
+        top: 630px;
+    }
+    #slider1 {
+        right: 10px;
+        top: 460px;
+    }
+    #slider2 {
+        right: 10px;
+        top: 480px;
+    }
+    #slider3 {
+        right: 10px;
+        top: 500px;
+    }
+    #slider4 {
+        right: 10px;
+        top: 520px;
+    }
+    #slider5 {
+        right: 10px;
+        top: 540px;
+    }
+    #slider6 {
+        right: 10px;
+        top: 560px;
+    }
+    #slider7 {
+        right: 10px;
+        top: 580px;
+    }
+    #slider8 {
+        right: 10px;
+        top: 600px;
+    }
+    #slider9 {
+        right: 10px;
+        top: 620px;
+    }
+    #slider10 {
+        right: 10px;
+        top: 640px;
+    }
+    /* projects */
+    #project1 {
+        max-width: 480px;
+        height: 100%;
+    }
+    .projects .closebtn {
+        top: 1px;
+        right: 6px;
+        font-size: 30px;
+        text-decoration: none;
+        position: absolute;
+    }
+    .img1 {
+        top: 210px;
+        width: 300px;
+        height: 250px;
+        left:40px;
+    }
+    .name {
+        font-weight: 130;
+        font-size: 40px !important;
+        left: 20px !important;
+        top: 450px !important;
+        position: absolute;
+    }
+    .text {
+        font-weight: 100;
+        font-size: 15px;
+        left: 200px;
+        top: 520px;
+        position: absolute;
+    }
+    .prev, .next {
+        top: 307px;
+        font-size: 40px;
+    }
+    .prev {
+        left: 20px;
+    }
+    .next {
+        left: 350px;
+    }
+}
+
+/* for tablets portrait (only ipad portret) */
+@media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: portrait) {
+    /* prof-box */
+    .prof-box {
+        top: 140px;
+        left: 100px;
+    }
+    #meabout {
+        max-width: 768px;
+    }
+    /* about me */
+    .about-content .closebtn {
+        position: absolute;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
+        color: rgb(109, 0, 0);
+    }
+    #h1 {
+        left: 20px;
+    }
+    .p1 {
+        width: 700px;
+    }
+    .p2 {
+        width: 700px;
+    }
+    .btn-2 {
+        left: 560px;
+        top: 400px;
+    }
+    #h2 {
+        top: 590px;
+    }
+    .html {
+        top: 660px;
+    }
+    .css {
+        top: 680px;
+    }
+    .js {
+        top: 700px;
+    }
+    .git {
+        top: 720px;
+    }
+    .ui {
+        top: 740px;
+    }
+    .oop {
+        top: 760px;
+    }
+    .unix {
+        top: 780px;
+    }
+    .react {
+        top: 800px;
+    }
+    .filmphoto {
+        top: 820px;
+    }
+    .collaging {
+        top: 840px;
+    }
+    #slider1 {
+        top: 670px;
+    }
+    #slider2 {
+        top: 690px;
+    }
+    #slider3 {
+        top: 710px;
+    }
+    #slider4 {
+        top: 730px;
+    }
+    #slider5 {
+        top: 750px;
+    }
+    #slider6 {
+        top: 770px;
+    }
+    #slider7 {
+        top: 790px;
+    }
+    #slider8 {
+        top: 810px;
+    }
+    #slider9 {
+        top: 830px;
+    }
+    #slider10 {
+        top: 850px;
+    }
+    /* projects */
+    .projects .closebtn {
+        position: absolute;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
+        color: rgb(109, 0, 0);
+    }
+    #project1 {
+        max-width: 768px;
+    }
+    .img1 {
+        top: 280px;
+        width: 500px;
+        height: 350px;
+        left: 130px;
+    }
+    .prev, .next {
+        top: 430px;
+        width: 100%;
+    }
+    .prev {
+        left: 100px;
+    }
+    .next {
+        left: 650px;
+    }
+    .name {
+        left: 130px;
+        top: 610px;
+    }
+    .text {
+        left: 440px;
+        top: 730px;
+    }
+}
+
+/* must be done: smth with project */
+/* for tablets landscape (only ipad landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* prof-box */
+    .prof-box {
+        top: 70px !important;
+        left: 220px !important;
+    }
+    /* about me */
+    #meabout {
+        max-width: 1024px !important;
+        max-height: 768px !important;
+    }
+    .about-content .closebtn {
+        position: absolute;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
+        color: rgb(109, 0, 0);
+    }
+    #h1 {
+        left: 25px !important;
+    }
+    .btn-2 {
+        left: 660px !important;
+    }
+    #h2 {
+        top: 590px !important;
+        right: 120px !important;
+    }
+    .html {
+        top: 650px !important;
+        right: 200px !important;
+    }
+    .css {
+        top: 670px !important;
+        right: 200px !important;
+    }
+    .js {
+        top: 690px !important;
+        right: 200px !important;
+    }
+    .git {
+        top: 710px !important;
+        right: 200px !important;
+    }
+    .ui {
+        top: 730px !important;
+        right: 200px !important;
+    }
+    .oop {
+        top: 750px !important;
+        right: 200px !important;
+    }
+    .unix {
+        top: 770px !important;
+        right: 200px !important;
+    }
+    .react {
+        top: 790px !important;
+        right: 200px !important;
+    }
+    .filmphoto {
+        top: 810px !important;
+        right: 200px !important;
+    }
+    .collaging {
+        top: 830px !important;
+        right: 200px !important;
+    }
+    #slider1 {
+        top: 660px !important;
+        right: 20px !important;
+    }
+    #slider2 {
+        top: 680px !important;
+        right: 20px !important;
+    }
+    #slider3 {
+        top: 700px !important;
+        right: 20px !important;
+    }
+    #slider4 {
+        top: 720px !important;
+        right: 20px !important;
+    }
+    #slider5 {
+        top: 740px !important;
+        right: 20px !important;
+    }
+    #slider6 {
+        top: 760px !important;
+        right: 20px !important;
+    }
+    #slider7 {
+        top: 780px !important;
+        right: 20px !important;
+    }
+    #slider8 {
+        top: 800px !important;
+        right: 20px !important;
+    }
+    #slider9 {
+        top: 820px !important;
+        right: 20px !important;
+    }
+    #slider10 {
+        top: 840px !important;
+        right: 20px !important;
+    }
+    /* projects */
+    .projects .closebtn {
+        position: absolute;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
+        color: rgb(109, 0, 0);
+    }
+    #project1 {
+        max-width: 1024px !important;
+        max-height: 768px !important;
+    }
+    .img1 {
+        left: 660px !important;
+        top: 190px !important;
+    }
+    .prev, .next {
+        top: 360px !important;
+        width: auto !important;
+    }
+    .prev {
+        left: 115px !important;
+    }
+    .next {
+        left: 870px !important;
+    }
+    .name {
+        left: 140px !important;
+        top: 560px !important;
+    }
+    .text {
+        left: 660px !important;
+        top: 660px !important;
+    }
+}
+
+/* only for ipad pro portrait */
+ @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    /* prof-box */
+    .prof-box {
+        top: 150px;
+        left: 220px;
+        background: rgba(14, 13, 13, 0.825);
+    }
+    .btn-1 {
+        box-shadow: 0 0 5px rgb(14, 13, 13, 0.825);
+    }
+    /* about me */
+    #meabout {
+        max-width: 1024px !important;
+        max-height: 1366px !important;
+    }
+    .about-content .closebtn {
+        position: absolute;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
+        color: rgb(109, 0, 0);
+    }
+    #h1 {
+        left: 25px;
+    }
+    .btn-2 {
+        left: 660px;
+    }
+    #h2 {
+        top: 610px !important;
+        right: 120px !important;
+    }
+    .html {
+        top: 670px !important;
+        right: 200px !important;
+    }
+    .css {
+        top: 690px !important;
+        right: 200px !important;
+    }
+    .js {
+        top: 710px !important;
+        right: 200px !important;
+    }
+    .git {
+        top: 730px !important;
+        right: 200px !important;
+    }
+    .ui {
+        top: 750px !important;
+        right: 200px !important;
+    }
+    .oop {
+        top: 770px !important;
+        right: 200px !important;
+    }
+    .unix {
+        top: 790px !important;
+        right: 200px !important;
+    }
+    .react {
+        top: 810px !important;
+        right: 200px !important;
+    }
+    .filmphoto {
+        top: 830px !important;
+        right: 200px !important;
+    }
+    .collaging {
+        top: 850px !important;
+        right: 200px !important;
+    }
+    #slider1 {
+        top: 680px !important;
+        right: 20px !important;
+    }
+    #slider2 {
+        top: 700px !important;
+        right: 20px !important;
+    }
+    #slider3 {
+        top: 720px !important;
+        right: 20px !important;
+    }
+    #slider4 {
+        top: 740px !important;
+        right: 20px !important;
+    }
+    #slider5 {
+        top: 760px !important;
+        right: 20px !important;
+    }
+    #slider6 {
+        top: 780px !important;
+        right: 20px !important;
+    }
+    #slider7 {
+        top: 800px !important;
+        right: 20px !important;
+    }
+    #slider8 {
+        top: 820px !important;
+        right: 20px !important;
+    }
+    #slider9 {
+        top: 840px !important;
+        right: 20px !important;
+    }
+    #slider10 {
+        top: 860px !important;
+        right: 20px !important;
+    }
+    /* projects */
+    .projects .closebtn {
+        position: absolute;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
+        color: rgb(109, 0, 0);
+    }
+    #project1 {
+        max-width: 1024px !important;
+        max-height: 1366px !important;
+    }
+    .img1 {
+        left: 150px !important;
+        top: 250px !important;
+    }
+    .prev, .next {
+        top: 420px !important;
+        width: auto !important;
+    }
+    .prev {
+        left: 115px !important;
+    }
+    .next {
+        left: 870px !important;
+    }
+    .name {
+        left: 140px !important;
+        top: 620px !important;
+    }
+    .text {
+        left: 660px !important;
+        top: 720px !important;
+    }
+} 
+
+/* only for ipad pro landscape */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    /* prof-box */
+    .prof-box {
+        top: 140px;
+        left: 390px;
+    }
+    /* about me */
+    #meabout {
+        max-width: 1366px !important;
+        max-height: 1024px !important;
+    }
+    #h1 {
+        left: 30px;
+    }
+    #h2 {
+        top: 610px !important;
+        right: 120px !important;
+    }
+    .html {
+        top: 670px !important;
+        right: 200px !important;
+    }
+    .css {
+        top: 690px !important;
+        right: 200px !important;
+    }
+    .js {
+        top: 710px !important;
+        right: 200px !important;
+    }
+    .git {
+        top: 730px !important;
+        right: 200px !important;
+    }
+    .ui {
+        top: 750px !important;
+        right: 200px !important;
+    }
+    .oop {
+        top: 770px !important;
+        right: 200px !important;
+    }
+    .unix {
+        top: 790px !important;
+        right: 200px !important;
+    }
+    .react {
+        top: 810px !important;
+        right: 200px !important;
+    }
+    .filmphoto {
+        top: 830px !important;
+        right: 200px !important;
+    }
+    .collaging {
+        top: 850px !important;
+        right: 200px !important;
+    }
+    #slider1 {
+        top: 680px !important;
+        right: 20px !important;
+    }
+    #slider2 {
+        top: 700px !important;
+        right: 20px !important;
+    }
+    #slider3 {
+        top: 720px !important;
+        right: 20px !important;
+    }
+    #slider4 {
+        top: 740px !important;
+        right: 20px !important;
+    }
+    #slider5 {
+        top: 760px !important;
+        right: 20px !important;
+    }
+    #slider6 {
+        top: 780px !important;
+        right: 20px !important;
+    }
+    #slider7 {
+        top: 800px !important;
+        right: 20px !important;
+    }
+    #slider8 {
+        top: 820px !important;
+        right: 20px !important;
+    }
+    #slider9 {
+        top: 840px !important;
+        right: 20px !important;
+    }
+    #slider10 {
+        top: 860px !important;
+        right: 20px !important;
+    }
+    /* projects */
+    #project1 {
+        max-width: 1366px !important;
+        max-height: 1024px !important;
+    }
+    .img1 {
+        left: 330px !important;
+        top: 250px !important;
+    }
+    .prev, .next {
+        top: 420px !important;
+        width: auto !important;
+    }
+    .prev {
+        left: 295px !important;
+    }
+    .next {
+        left: 1050px !important;
+    }
+    .name {
+        left: 320px !important;
+        top: 620px !important;
+    }
+    .text {
+        left: 835px !important;
+        top: 720px !important;
+    }
+}
+
+/* for most common desktops */
+
+/* !!!!!!!!!!!!!must be uncommented */
+
+/* 1536x864 */
+/* @media only screen and (min-width: 1536px) and (min-height: 864px) {
+    .prof-box {
+        top: 110px;
+        left: 480px;
+    }
+    .about .closebtn {
+        font-size: 40px;
+    }
+    .projects .closebtn {
+        font-size: 40px;
+    }
+    .img1 {
+        top: 180px !important;
+        left: 320px !important;
+        width: 900px !important;
+        height: 500px !important; 
+    }
+    .prev, .next {
+        top: 410px !important;
+        width: 1000px !important;
+        font-size: 70px !important;
+    }
+    .prev {
+        left: 280px !important;
+    }
+    .next {
+        left: 1240px !important;
+    }
+    .name {
+        top: 640px !important;
+        left: 310px !important;
+        font-size: 80px !important;
+    }
+    .text {
+        top: 780px !important;
+        left: 980px !important;
+        font-size: 25px !important;
+    }
+} */
+
+ /* 1440x900 */
+/* @media only screen and (min-width: 1440px) and (min-height: 900px) {
+    .prof-box {
+        top: 140px;
+        left: 440px;
+    }
+    .about .closebtn {
+        font-size: 40px;
+    }
+    .projects .closebtn {
+        font-size: 40px;
+    }
+    .img1 {
+        top: 240px !important;
+        left: 380px;
+    }
+    .prev, .next {
+        top: 410px !important;
+        width: 1000px !important;
+        font-size: 50px !important;
+    }
+    .prev {
+        left: 350px !important;
+    }
+    .next {
+        left: 1090px !important;
+    }
+    .name {
+        top: 620px !important;
+        left: 360px !important;
+    }
+    .text {
+        top: 740px !important;
+        left: 890px !important;
+    }
+} */
+
+/* !!!!must be done: .prof-box - to left */
+ /* 1920x1080  */
+/* @media only screen and (min-width: 1920px) and (min-height: 1080px) {
+    .prof-box {
+        width: 600px;
+        height: 650px;
+    }
+    .prof-pic {
+        top: 25px;
+        left: 265px;
+        width: 170px;
+        height: 170px;
+    }
+    #h {
+        top: 170px;
+        left: 235px;
+        font-weight: 100;
+        font-size: 75px;
+    }
+    .dev {
+        top: 280px;
+        left: 210px;
+        font-size: 35px;
+    }
+    .info {
+        top: 370px;
+        left: 40px;
+        width: 600px;
+        font-size: 23px;
+    }
+    .social-icons {
+        top: 680px;
+        left: 260px;
+        font-size: 40px;
+    }
+    .btn-1 {
+        top: 590px;
+        left: 230px;
+        font-size: 60px;
+        width: 220px;
+        height: 70px;
+    }
+    #meabout {
+        max-width: 1920px !important;
+        max-height: 1080px !important;
+    }
+    .about .closebtn {
+        font-size: 40px;
+    }
+    #h1 {
+        font-size: 70px;
+        top: 40px !important;
+        left: 30px;
+    }
+    .p1 {
+        width: 800px !important;
+        font-size: 20px;
+        top: 190px !important;
+    }
+    .p2 {
+        width: 800px !important;
+        font-size: 20px;
+        top: 310px !important;
+    }
+    .btn-2 {
+        left: 650px;
+        top: 430px;
+    }
+    #h2 {
+        top: 770px !important;
+        right: 120px !important;
+        font-size: 40px;
+    }
+    .slider {
+        width: 90px !important;
+        height: 0.2px !important;
+    }
+    .html {
+        top: 846px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .css {
+        top: 866px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .js {
+        top: 886px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .git {
+        top: 906px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .ui {
+        top: 926px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .oop {
+        top: 946px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .unix {
+        top: 966px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .react {
+        top: 986px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .filmphoto {
+        top: 1006px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .collaging {
+        top: 1026px !important;
+        right: 210px !important;
+        font-size: 20px;
+    }
+    .slider {
+        width: 110px !important;
+        height: 0.2px;
+    }
+    #slider1 {
+        top: 860px !important;
+        right: 20px !important;
+    }
+    #slider2 {
+        top: 880px !important;
+        right: 20px !important;
+    }
+    #slider3 {
+        top: 900px !important;
+        right: 20px !important;
+
+    }
+    #slider4 {
+        top: 920px !important;
+        right: 20px !important;
+    }
+    #slider5 {
+        top: 940px !important;
+        right: 20px !important;
+    }
+    #slider6 {
+        top: 960px !important;
+        right: 20px !important;
+    }
+    #slider7 {
+        top: 980px !important;
+        right: 20px !important;
+    }
+    #slider8 {
+        top: 1000px !important;
+        right: 20px !important;
+    }
+    #slider9 {
+        top: 1020px !important;
+        right: 20px !important;
+    }
+    #slider10 {
+        top: 1040px !important;
+        right: 20px !important;
+    }
+    .projects .closebtn {
+        font-size: 40px;
+    }
+    .img1 {
+        top: 290px !important;
+        width: 900px;
+        height: 500px;
+        left: 530px !important;
+    }
+    .prev, .next {
+        top: 520px !important;
+        font-size: 70px !important;
+        width: 1200px !important;
+    }
+    .prev {
+        left: 490px !important;
+    }
+    .next {
+        left: 1450px !important;
+    } 
+    .name {
+        top: 780px !important;
+        left: 530px !important;
+        font-size: 80px !important;
+    }
+    .text {
+        top: 940px !important;
+        font-size: 25px !important;
+        left: 1200px !important;
+    }
+} */
+
+/* 1366x768 */
+/* @media only screen and (min-width: 1366px) and (min-height: 768px) {
+    .prof-box {
+        top: 70px;
+    }
+    .img1 {
+        top: 180px !important;
+    }
+    .prev, .next {
+        top: 350px !important;
+    }
+    .name {
+        top: 560px !important;
+    }
+    .text {
+        top: 670px !important;
+    }
+} */
+
+/*
+    imac 1680 x 1050 - prof-box i project - levee;
+    imac 2560 x 1440 - !!!!must be done;
+    imac 4096 x 2304 - !!!!must be done;
+    imac 5120 x 2880 - !!!!must be done;
+*/
