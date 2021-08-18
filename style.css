@@ -496,21 +496,20 @@ nav {
         max-width: 160px !important;
     }
     .nav-menu ul li a {
-        font-size: 10px !important; 
+        font-size: 10px !important;
     }
     #menuToggle {
         width: 30px !important;
         height: 30px !important;
         right: 5px !important;
-        top: 1px !important;
     }
     /* prof-box */
     .prof-box {
         max-width: 480px !important;
-        background-size: cover;
+        background-size: cover !important;
         width: 300px !important;
         height: 430px !important;
-        padding: 0;
+        padding: 0 !important;
         top: 120px !important;
         left: 40px !important;
     }
@@ -597,7 +596,7 @@ nav {
         top: 320px !important;
         left: 240px !important;
         font-weight: 100;
-        font-size: 15px !important;
+        font-size: 15px;
         width: 110px !important;
         height: 20px !important;
         text-align: center;
@@ -609,7 +608,7 @@ nav {
         position: absolute;
         right: 100px !important;
         top: 400px !important;
-        font-weight: 100 !important;
+        font-weight: 100;
         font-size: 25px !important;
     }
     .slider {
@@ -634,7 +633,7 @@ nav {
     }
     .html {
         right: 160px !important;
-        top: 450px !important;
+        top: 450px !important; 
     }
     .css {
         right: 160px !important;
@@ -728,7 +727,7 @@ nav {
         top: 210px !important;
         width: 300px !important;
         height: 250px !important;
-        left:40px !important;
+        left: 40px !important;
     }
     .name {
         font-weight: 130;
@@ -756,136 +755,134 @@ nav {
     }
 }
 
-/* !!!!must be done: for 468-768 */
-
 /* for tablets portrait (only ipad portret) */
-@media only screen and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: portrait) {
     /* prof-box */
     .prof-box {
-        top: 140px !important;
-        left: 100px !important;
+        top: 140px;
+        left: 100px;
     }
     #meabout {
-        max-width: 768px !important;
+        max-width: 768px;
     }
     /* about me */
     .about-content .closebtn {
         position: absolute;
-        top: 1px !important;
-        right: 6px !important;
-        font-size: 35px !important;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
         color: rgb(109, 0, 0);
     }
     #h1 {
-        left: 20px !important;
+        left: 20px;
     }
     .p1 {
-        width: 700px !important;
+        width: 700px;
     }
     .p2 {
-        width: 700px !important;
+        width: 700px;
     }
     .btn-2 {
-        left: 560px !important;
-        top: 400px !important;
+        left: 560px;
+        top: 400px;
     }
     #h2 {
-        top: 590px !important;
+        top: 590px;
     }
     .html {
-        top: 660px !important;
+        top: 660px;
     }
     .css {
-        top: 680px !important;
+        top: 680px;
     }
     .js {
-        top: 700px !important;
+        top: 700px;
     }
     .git {
-        top: 720px !important;
+        top: 720px;
     }
     .ui {
-        top: 740px !important;
+        top: 740px;
     }
     .oop {
-        top: 760px !important;
+        top: 760px;
     }
     .unix {
-        top: 780px !important;
+        top: 780px;
     }
     .react {
-        top: 800px !important;
+        top: 800px;
     }
     .filmphoto {
-        top: 820px !important;
+        top: 820px;
     }
     .collaging {
-        top: 840px !important;
+        top: 840px;
     }
     #slider1 {
-        top: 670px !important;
+        top: 670px;
     }
     #slider2 {
-        top: 690px !important;
+        top: 690px;
     }
     #slider3 {
-        top: 710px !important;
+        top: 710px;
     }
     #slider4 {
-        top: 730px !important;
+        top: 730px;
     }
     #slider5 {
-        top: 750px !important;
+        top: 750px;
     }
     #slider6 {
-        top: 770px !important;
+        top: 770px;
     }
     #slider7 {
-        top: 790px !important;
+        top: 790px;
     }
     #slider8 {
-        top: 810px !important;
+        top: 810px;
     }
     #slider9 {
-        top: 830px !important;
+        top: 830px;
     }
     #slider10 {
-        top: 850px !important;
+        top: 850px;
     }
     /* projects */
     .projects .closebtn {
         position: absolute;
-        top: 1px !important;
-        right: 6px !important;
-        font-size: 35px !important;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
         color: rgb(109, 0, 0);
     }
     #project1 {
-        max-width: 768px !important;
+        max-width: 768px;
     }
     .img1 {
-        top: 280px !important;
-        width: 500px !important;
-        height: 350px !important;
-        left: 130px !important;
+        top: 280px;
+        width: 500px;
+        height: 350px;
+        left: 130px;
     }
     .prev, .next {
-        top: 430px !important;
-        width: 100% !important;
+        top: 430px;
+        width: 100%;
     }
     .prev {
-        left: 100px !important;
+        left: 100px;
     }
     .next {
-        left: 650px !important;
+        left: 650px;
     }
     .name {
-        left: 130px !important;
-        top: 610px !important;
+        left: 130px;
+        top: 610px;
     }
     .text {
-        left: 440px !important;
-        top: 730px !important;
+        left: 440px;
+        top: 730px;
     }
 }
 
@@ -904,9 +901,9 @@ nav {
     }
     .about-content .closebtn {
         position: absolute;
-        top: 1px !important;
-        right: 6px !important;
-        font-size: 35px !important;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
         color: rgb(109, 0, 0);
     }
     #h1 {
@@ -1012,8 +1009,8 @@ nav {
         max-height: 768px !important;
     }
     .img1 {
-        left: 660px !important;
-        top: 190px !important;
+        left: 1px !important;
+        top: 1px !important;
     }
     .prev, .next {
         top: 360px !important;
@@ -1039,8 +1036,8 @@ nav {
  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     /* prof-box */
     .prof-box {
-        top: 150p !important;
-        left: 220px !important;
+        top: 150px;
+        left: 220px;
         background: rgba(14, 13, 13, 0.825);
     }
     .btn-1 {
@@ -1053,16 +1050,16 @@ nav {
     }
     .about-content .closebtn {
         position: absolute;
-        top: 1px !important;
-        right: 6px !important;
-        font-size: 35px !important;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
         color: rgb(109, 0, 0);
     }
     #h1 {
-        left: 25px !important;
+        left: 25px;
     }
     .btn-2 {
-        left: 660px !important;
+        left: 660px;
     }
     #h2 {
         top: 610px !important;
@@ -1151,9 +1148,9 @@ nav {
     /* projects */
     .projects .closebtn {
         position: absolute;
-        top: 1px !important;
-        right: 6px !important;
-        font-size: 35px !important;
+        top: 1px;
+        right: 6px;
+        font-size: 35px;
         color: rgb(109, 0, 0);
     }
     #project1 {
@@ -1188,8 +1185,8 @@ nav {
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
     /* prof-box */
     .prof-box {
-        top: 140px !important;
-        left: 390px !important;
+        top: 140px;
+        left: 390px;
     }
     /* about me */
     #meabout {
@@ -1536,7 +1533,6 @@ nav {
     #slider3 {
         top: 900px !important;
         right: 20px !important;
-
     }
     #slider4 {
         top: 920px !important;
