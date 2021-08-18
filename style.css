@@ -485,7 +485,7 @@ nav {
 /* !!!!must change: all m queries */
 
 /* for mobiles (only iphone 6,7,8) */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     /* menu */
     .nav-menu {
         height: 30px !important;
@@ -506,7 +506,7 @@ nav {
     /* prof-box */
     .prof-box {
         max-width: 480px !important;
-        background-size: cover; 
+        background-size: cover;
         width: 300px !important;
         height: 430px !important;
         padding: 0;
@@ -520,85 +520,85 @@ nav {
         top: 20px !important;
     }
     #h {
-        top: 80px;
-        left: 90px;
-        font-size: 45px;
+        top: 80px !important;
+        left: 90px !important;
+        font-size: 45px !important;
     }
     .dev {
-        top: 160px;
-        left: 90px;
-        font-size: 15px;
+        top: 160px !important;
+        left: 90px !important;
+        font-size: 15px !important;
     }
     .info {
-        top: 200px;
-        left: 10px;
-        width: 280px;
-        font-size: 14px;
+        top: 200px !important;
+        left: 10px !important;
+        width: 280px !important;
+        font-size: 14px !important;
     }
     .btn-1 {
-        top: 340px;
-        left: 60px;
-        font-size: 40px;
-        width: 180px;
-        height: 50px;
+        top: 340px !important;
+        left: 60px !important;
+        font-size: 40px !important;
+        width: 180px !important;
+        height: 50px !important;
     }
     .social-icons {
-        top: 400px;
-        left: 100px;
-        font-size: 20px;
+        top: 400px !important;
+        left: 100px !important;
+        font-size: 20px !important;
     }
     .social-icons a {
-        margin: 0 8px 0 0;
+        margin: 0 8px 0 0 !important;
     }
     /* about me */
     #meabout {
-        max-width: 480px;
-        height: 100%;
+        max-width: 480px !important;
+        height: 100% !important;
     }
     .about-content .closebtn {
-        top: 1px;
-        right: 6px;
-        font-size: 30px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 30px !important;
         text-decoration: none;
         position: absolute;
     }
     #h1 {
-        font-size: 50px;
-        left: 17px;
-        top: 10px;
+        font-size: 50px !important;
+        left: 17px !important;
+        top: 10px !important;
     }
    .p1 {
         position: absolute;
-        top: 100px;
-        left: 10px;
-        padding: 8px;
+        top: 100px !important;
+        left: 10px !important;
+        padding: 8px !important;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 14px !important;
         transition: 0.2s;
         font-weight: 100;
         text-align: left;
-        width: 330px;
+        width: 330px !important;
     }
   .p2 {
         position: absolute;
-        top: 210px;
-        left: 10px;
-        padding: 8px;
+        top: 210px !important;
+        left: 10px !important;
+        padding: 8px !important;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 14px !important;
         transition: 0.2s;
         font-weight: 100;
         text-align: left;
-        width: 330px;
+        width: 330px !important;
     }
     .btn-2 {
         position: absolute;
-        top: 320px;
-        left: 240px;
+        top: 320px !important;
+        left: 240px !important;
         font-weight: 100;
-        font-size: 15px;
-        width: 110px;
-        height: 20px;
+        font-size: 15px !important;
+        width: 110px !important;
+        height: 20px !important;
         text-align: center;
         cursor: pointer;
         border: 1px solid rgb(255, 255, 255, 0.6);
@@ -606,22 +606,22 @@ nav {
     }
     #h2 {
         position: absolute;
-        right: 100px;
-        top: 400px;
-        font-weight: 100;
-        font-size: 25px;
+        right: 100px !important;
+        top: 400px !important;
+        font-weight: 100 !important;
+        font-size: 25px !important;
     }
     .slider {
         -webkit-appearance: none;
-        width: 90px;
+        width: 90px !important;
         height: 0.2px;
         outline: none;
         position: absolute;
     }
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
-        width: 4px;
-        height: 4px;
+        width: 4px !important;
+        height: 4px !important;
         border-radius: 50%;
         cursor: pointer;
     }
@@ -629,105 +629,105 @@ nav {
     .filmphoto, .collaging, .ui, .react {
         position: absolute;
         font-weight: 100;
-        font-size: 15px;
+        font-size: 15px !important;
     }
     .html {
-        right: 160px;
-        top: 450px;
+        right: 160px !important;
+        top: 450px !important;
     }
     .css {
-        right: 160px;
-        top: 470px;
+        right: 160px !important;
+        top: 470px !important;
     }
     .js {
-        right: 160px;
-        top: 490px;
+        right: 160px !important;
+        top: 490px !important;
     }
     .git {
-        right: 160px;
-        top: 510px;
+        right: 160px !important;
+        top: 510px !important;
     }
     .ui {
-        right: 160px;
-        top: 530px;
+        right: 160px !important;
+        top: 530px !important;
     }
     .oop {
-        right: 160px;
-        top: 550px;
+        right: 160px !important;
+        top: 550px !important;
     }
     .unix {
-        right: 160px;
-        top: 570px;
+        right: 160px !important;
+        top: 570px !important;
     }
     .react {
-        right: 160px;
-        top: 590px;
+        right: 160px !important;
+        top: 590px !important;
     }
     .filmphoto {
-        right: 160px;
-        top: 610px;
+        right: 160px !important;
+        top: 610px !important;
     }
     .collaging {
-        right: 160px;
-        top: 630px;
+        right: 160px !important;
+        top: 630px !important;
     }
     #slider1 {
-        right: 10px;
-        top: 460px;
+        right: 10px !important;
+        top: 460px !important;
     }
     #slider2 {
-        right: 10px;
-        top: 480px;
+        right: 10px !important;
+        top: 480px !important;
     }
     #slider3 {
-        right: 10px;
-        top: 500px;
+        right: 10px !important;
+        top: 500px !important;
     }
     #slider4 {
-        right: 10px;
-        top: 520px;
+        right: 10px !important;
+        top: 520px !important;
     }
     #slider5 {
-        right: 10px;
-        top: 540px;
+        right: 10px !important;
+        top: 540px !important;
     }
     #slider6 {
-        right: 10px;
-        top: 560px;
+        right: 10px !important;
+        top: 560px !important;
     }
     #slider7 {
-        right: 10px;
-        top: 580px;
+        right: 10px !important;
+        top: 580px !important;
     }
     #slider8 {
-        right: 10px;
-        top: 600px;
+        right: 10px !important;
+        top: 600px !important;
     }
     #slider9 {
-        right: 10px;
-        top: 620px;
+        right: 10px !important;
+        top: 620px !important;
     }
     #slider10 {
-        right: 10px;
-        top: 640px;
+        right: 10px !important;
+        top: 640px !important;
     }
     /* projects */
     #project1 {
-        max-width: 480px;
-        height: 100%;
+        max-width: 480px !important;
+        height: 100% !important;
     }
     .projects .closebtn {
-        top: 1px;
-        right: 6px;
-        font-size: 30px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 30px !important;
         text-decoration: none;
         position: absolute;
     }
     .img1 {
-        top: 210px;
-        width: 300px;
-        height: 250px;
-        left:40px;
+        top: 210px !important;
+        width: 300px !important;
+        height: 250px !important;
+        left:40px !important;
     }
     .name {
         font-weight: 130;
@@ -738,25 +738,25 @@ nav {
     }
     .text {
         font-weight: 100;
-        font-size: 15px;
-        left: 200px;
-        top: 520px;
+        font-size: 15px !important;
+        left: 200px !important;
+        top: 520px !important;
         position: absolute;
     }
     .prev, .next {
-        top: 307px;
-        font-size: 40px;
+        top: 307px !important;
+        font-size: 40px !important;
     }
     .prev {
-        left: 20px;
+        left: 20px !important;
     }
     .next {
-        left: 350px;
+        left: 350px !important;
     }
 }
-
+/* (min-width: 480px) and  */
 /* for tablets portrait (only ipad portret) */
-@media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
     /* prof-box */
     .prof-box {
         top: 140px;
