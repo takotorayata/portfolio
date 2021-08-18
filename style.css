@@ -754,135 +754,137 @@ nav {
         left: 350px !important;
     }
 }
-/* (min-width: 480px) and  */
+
+/* !!!!must be done: for 468-768 */
+
 /* for tablets portrait (only ipad portret) */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     /* prof-box */
     .prof-box {
-        top: 140px;
-        left: 100px;
+        top: 140px !important;
+        left: 100px !important;
     }
     #meabout {
-        max-width: 768px;
+        max-width: 768px !important;
     }
     /* about me */
     .about-content .closebtn {
         position: absolute;
-        top: 1px;
-        right: 6px;
-        font-size: 35px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 35px !important;
         color: rgb(109, 0, 0);
     }
     #h1 {
-        left: 20px;
+        left: 20px !important;
     }
     .p1 {
-        width: 700px;
+        width: 700px !important;
     }
     .p2 {
-        width: 700px;
+        width: 700px !important;
     }
     .btn-2 {
-        left: 560px;
-        top: 400px;
+        left: 560px !important;
+        top: 400px !important;
     }
     #h2 {
-        top: 590px;
+        top: 590px !important;
     }
     .html {
-        top: 660px;
+        top: 660px !important;
     }
     .css {
-        top: 680px;
+        top: 680px !important;
     }
     .js {
-        top: 700px;
+        top: 700px !important;
     }
     .git {
-        top: 720px;
+        top: 720px !important;
     }
     .ui {
-        top: 740px;
+        top: 740px !important;
     }
     .oop {
-        top: 760px;
+        top: 760px !important;
     }
     .unix {
-        top: 780px;
+        top: 780px !important;
     }
     .react {
-        top: 800px;
+        top: 800px !important;
     }
     .filmphoto {
-        top: 820px;
+        top: 820px !important;
     }
     .collaging {
-        top: 840px;
+        top: 840px !important;
     }
     #slider1 {
-        top: 670px;
+        top: 670px !important;
     }
     #slider2 {
-        top: 690px;
+        top: 690px !important;
     }
     #slider3 {
-        top: 710px;
+        top: 710px !important;
     }
     #slider4 {
-        top: 730px;
+        top: 730px !important;
     }
     #slider5 {
-        top: 750px;
+        top: 750px !important;
     }
     #slider6 {
-        top: 770px;
+        top: 770px !important;
     }
     #slider7 {
-        top: 790px;
+        top: 790px !important;
     }
     #slider8 {
-        top: 810px;
+        top: 810px !important;
     }
     #slider9 {
-        top: 830px;
+        top: 830px !important;
     }
     #slider10 {
-        top: 850px;
+        top: 850px !important;
     }
     /* projects */
     .projects .closebtn {
         position: absolute;
-        top: 1px;
-        right: 6px;
-        font-size: 35px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 35px !important;
         color: rgb(109, 0, 0);
     }
     #project1 {
-        max-width: 768px;
+        max-width: 768px !important;
     }
     .img1 {
-        top: 280px;
-        width: 500px;
-        height: 350px;
-        left: 130px;
+        top: 280px !important;
+        width: 500px !important;
+        height: 350px !important;
+        left: 130px !important;
     }
     .prev, .next {
-        top: 430px;
-        width: 100%;
+        top: 430px !important;
+        width: 100% !important;
     }
     .prev {
-        left: 100px;
+        left: 100px !important;
     }
     .next {
-        left: 650px;
+        left: 650px !important;
     }
     .name {
-        left: 130px;
-        top: 610px;
+        left: 130px !important;
+        top: 610px !important;
     }
     .text {
-        left: 440px;
-        top: 730px;
+        left: 440px !important;
+        top: 730px !important;
     }
 }
 
@@ -901,9 +903,9 @@ nav {
     }
     .about-content .closebtn {
         position: absolute;
-        top: 1px;
-        right: 6px;
-        font-size: 35px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 35px !important;
         color: rgb(109, 0, 0);
     }
     #h1 {
@@ -999,9 +1001,9 @@ nav {
     /* projects */
     .projects .closebtn {
         position: absolute;
-        top: 1px;
-        right: 6px;
-        font-size: 35px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 35px !important;
         color: rgb(109, 0, 0);
     }
     #project1 {
@@ -1036,8 +1038,8 @@ nav {
  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
     /* prof-box */
     .prof-box {
-        top: 150px;
-        left: 220px;
+        top: 150p !important;
+        left: 220px !important;
         background: rgba(14, 13, 13, 0.825);
     }
     .btn-1 {
@@ -1050,16 +1052,16 @@ nav {
     }
     .about-content .closebtn {
         position: absolute;
-        top: 1px;
-        right: 6px;
-        font-size: 35px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 35px !important;
         color: rgb(109, 0, 0);
     }
     #h1 {
-        left: 25px;
+        left: 25px !important;
     }
     .btn-2 {
-        left: 660px;
+        left: 660px !important;
     }
     #h2 {
         top: 610px !important;
@@ -1148,9 +1150,9 @@ nav {
     /* projects */
     .projects .closebtn {
         position: absolute;
-        top: 1px;
-        right: 6px;
-        font-size: 35px;
+        top: 1px !important;
+        right: 6px !important;
+        font-size: 35px !important;
         color: rgb(109, 0, 0);
     }
     #project1 {
@@ -1185,8 +1187,8 @@ nav {
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
     /* prof-box */
     .prof-box {
-        top: 140px;
-        left: 390px;
+        top: 140px !important;
+        left: 390px !important;
     }
     /* about me */
     #meabout {
